@@ -6,11 +6,10 @@ import Hero from './components/Hero/Hero';
 import People from './components/People/People';
 import Portfolio from './components/Portfolio/Portfolio';
 import Work from './components/Work/Work';
-import Contact from './components/Contact/Contact'; // Import Contact component
+import Contact from './components/Contact/Contact';
 import css from './styles/App.module.scss';
 
 const App = () => {
-  //don't forget to add font link in index.html
   return (
     <div className={`bg-primary ${css.container}`}>
       <Header/>
@@ -19,7 +18,7 @@ const App = () => {
       <Work/>
       <Portfolio/>
       <People/>
-      <Contact/> {/* Add Contact component */}
+      <Contact/>
       <Footer/>
     </div>
   );

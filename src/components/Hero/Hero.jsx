@@ -27,33 +27,35 @@ const Hero = () => {
           </motion.p>
         </div>
 
-        <motion.div
-          variants={fadeIn("up", "tween", 0.3, 1)}
-          className={css.person}
-        >
-          <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src="./pp.png" alt="Youssef Lafkih" />
-        </motion.div>
+        <div className={css.heroContent}>
+          <div className={css.buttons}>
+            <motion.a 
+              className={`${css.button} ${css.emailButton}`} 
+              href="mailto:youssef.lafkih03@gmail.com"
+              variants={fadeIn("up", "tween", 0.6, 1)}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <FiMail /> Email Me
+            </motion.a>
+            <motion.a 
+              className={`${css.button} ${css.cvButton}`} 
+              href="https://drive.google.com/file/d/1ZZfqos30SxZcfgKbqUHFR8-02sNZXl8M/view" 
+              download="Youssef_Lafkih_CV"
+              variants={fadeIn("up", "tween", 0.7, 1)}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <FiDownload /> Download CV
+            </motion.a>
+          </div>
 
-        <div className={css.buttons}>
-          <motion.a 
-            className={`${css.button} ${css.emailButton}`} 
-            href="mailto:youssef.lafkih03@gmail.com"
-            variants={fadeIn("up", "tween", 0.6, 1)}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <motion.div
+            variants={fadeIn("up", "tween", 0.3, 1)}
+            className={css.person}
           >
-            <FiMail /> Email Me
-          </motion.a>
-          <motion.a 
-            className={`${css.button} ${css.cvButton}`} 
-            href="https://drive.google.com/file/d/1ZZfqos30SxZcfgKbqUHFR8-02sNZXl8M/view" 
-            download="Youssef_Lafkih_CV"
-            variants={fadeIn("up", "tween", 0.7, 1)}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <FiDownload /> Download CV
-          </motion.a>
+            <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src="./pp.png" alt="Youssef Lafkih" />
+          </motion.div>
         </div>
 
         <div className={css.lowerElements}>
