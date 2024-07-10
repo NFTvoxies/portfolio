@@ -1,0 +1,62 @@
+.wrapper {
+    background-color: var(--primary-color);
+    padding: 50px 0;
+  }
+  
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .heading {
+    margin-bottom: 30px;
+  }
+  
+  .form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-bg-color);
+    color: var(--text-color);
+    resize: none;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submitButton:hover {
+    background-color: var(--button-bg-color-hover);
+  }
+  
