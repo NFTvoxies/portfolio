@@ -1,76 +1,79 @@
-@import '../../styles/contants.scss';
-
 .wrapper {
-  background-color: var(--primary-color);
-  padding: 50px 0;
-}
-
-.container {
-  flex-direction: column;
-  text-align: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #F8F7F1 100%);
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .heading {
   margin-bottom: 30px;
-}
+  text-align: center;
 
-.successMessage {
-  margin-bottom: 20px;
-  color: var(--success-color);
-  font-weight: bold;
+  .primaryText {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .secondaryText {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
 }
 
 .form {
   width: 100%;
   max-width: 600px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
 
-.inputGroup {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 
-label {
-  margin-bottom: 8px;
-  font-weight: 600;
-  color: var(--text-color);
-}
+    label {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #495057;
+    }
 
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid var(--border-color);
-  background-color: var(--input-bg-color);
-  color: var(--text-color);
-  resize: none;
-}
+    input,
+    textarea {
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
 
-textarea {
-  height: 150px;
-}
+    input:focus,
+    textarea:focus {
+      border-color: #495057;
+      outline: none;
+    }
 
-.error {
-  color: var(--error-color);
-  font-size: 0.875rem;
-  margin-top: 5px;
-}
+    .error {
+      font-size: 0.875rem;
+      color: #d9534f;
+    }
+  }
 
-.submitButton {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--button-bg-color);
-  color: var(--button-text-color);
-  cursor: pointer;
-  font-size: 16px;
-}
+  .submitButton {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0e3344;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 
-.submitButton:hover {
-  background-color: var(--button-bg-color-hover);
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
 }

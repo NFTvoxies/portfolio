@@ -66,7 +66,7 @@ const Contact = () => {
           variants={fadeIn("up", "tween", 0.3, 1)}
           className={css.heading}
         >
-          <span className="primaryText">Get in Touch</span>
+          <h2 className="primaryText">Get in Touch</h2>
           <p className="secondaryText">
             Feel free to reach out for collaborations or just a friendly chat.
           </p>
@@ -85,9 +85,18 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
+              placeholder="Your Name"
               required
             />
-            {errors.name && <span className={css.error}>{errors.name}</span>}
+            {errors.name && (
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className={css.error}
+              >
+                {errors.name}
+              </motion.span>
+            )}
           </div>
           <div className={css.inputGroup}>
             <label htmlFor="email">Email</label>
@@ -97,9 +106,18 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
+              placeholder="Your Email"
               required
             />
-            {errors.email && <span className={css.error}>{errors.email}</span>}
+            {errors.email && (
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className={css.error}
+              >
+                {errors.email}
+              </motion.span>
+            )}
           </div>
           <div className={css.inputGroup}>
             <label htmlFor="message">Message</label>
@@ -108,15 +126,27 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
+              placeholder="Your Message"
               required
             />
             {errors.message && (
-              <span className={css.error}>{errors.message}</span>
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className={css.error}
+              >
+                {errors.message}
+              </motion.span>
             )}
           </div>
-          <button type="submit" className={css.submitButton}>
+          <motion.button
+            type="submit"
+            className={css.submitButton}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
             Send Message
-          </button>
+          </motion.button>
         </motion.form>
       </div>
     </motion.section>

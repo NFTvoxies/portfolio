@@ -8,6 +8,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
 import css from './styles/App.module.scss';
+import Education from './components/Education/Education';
 
 const App = () => {
   return (
@@ -16,8 +17,8 @@ const App = () => {
       <Hero/>
       <Experties/>
       <Work/>
+      <Education/>
       <Portfolio/>
-      <People/>
       <Contact/>
       <Footer/>
     </div>
