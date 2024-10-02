@@ -17,24 +17,24 @@ const Footer = () => {
       className={`innerWidth yPaddings flexCenter ${css.container}`}>
         <div className={css.left}>
           <span className="primaryText">
-            Let's make something <br />
-            amazing together.
+            Faisons quelque chose <br />
+            d'incroyable ensemble.
           </span>
           <span className="primaryText">
-            Start by <a href="mailto:youssef.lafkih03@gmail.com">saying hi</a>
+            Commencez par <a href="mailto:youssef.lafkih03@gmail.com">dire bonjour</a>
           </span>
         </div>
 
         <div className={css.right}>
           <div className={css.info}>
-            <span className="secondaryText">Information</span>
-            <p>Morocco, Casablanca, Rue 12 Maarif</p>
+            <span className="secondaryText">Informations</span>
+            <p>Maroc, Casablanca, Rue 12 Maarif</p>
           </div>
           <ul className={css.menu}>
             <li>Services</li>
-            <li>Works</li>
+            <li>Travaux</li>
             <li>Notes</li>
-            <li>Experience</li>
+            <li>Expérience</li>
           </ul>
         </div>
       </motion.div>
