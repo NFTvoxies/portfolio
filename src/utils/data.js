@@ -1,97 +1,101 @@
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { CiMobile1 } from "react-icons/ci";
 import { MdWorkspacesOutline } from "react-icons/md";
+
 export const projectExperience = [
   {
-    name: "Website Design",
+    name: "Conception de site Web",
     projects: 12,
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },
   {
-    name: "Mobile App Design",
+    name: "Conception d'application mobile",
     projects: 5,
     icon: CiMobile1,
     bg: "#EEC048",
   },
   {
-    name: "Brand Identity",
+    name: "Identité de marque",
     projects: 10,
     icon: MdWorkspacesOutline,
     bg: "#F26440",
   },
 ];
 
-export const WhatDoIHelp = [
-  "I will help you with finging a solution and solve your problem, We use process design to create digital products. Besides that also help their business.",
-  "We use process design to create digital products. Besides that also help their business",
-];
+export const WhatDoIHelp = [`
+Je suis un développeur passionné avec une expérience diversifiée dans la conception de sites web, le développement d'applications mobiles et la création d'identités de marque. Actuellement, je travaille chez IDEO Factory en tant que Développeur Full Stack, où je suis responsable du développement et de la maintenance des applications web. Mon parcours en freelance m'a permis de développer des compétences solides en WordPress et en design UI/UX.
+
+Mes valeurs fondamentales incluent le professionnalisme, la créativité et l'engagement envers la qualité. Je suis motivé par la résolution de problèmes complexes et la création de solutions numériques innovantes qui répondent aux besoins des clients.
+
+Je suis convaincu que la collaboration et la communication sont essentielles pour réussir dans le domaine du développement logiciel.`];
+
 
 export const workExp = [
   {
     place: "IDEO Factory",
-    tenure: "Sep 2023 - Present",
-    role: "Full Stack Developer",
+    tenure: "Sep 2023 - Présent",
+    role: "Développeur Full Stack",
     detail:
-      "Responsible for developing and maintaining both the front-end and back-end of web applications. Collaborate with designers and other developers to create user-friendly and efficient software solutions. Implement and optimize database structures, write server-side code, and ensure seamless integration between the front-end and back-end components.",
+      "Responsable du développement et de la maintenance des applications web, tant du côté front-end que back-end. Collaborer avec les designers et autres développeurs pour créer des solutions logicielles conviviales et efficaces. Implémenter et optimiser les structures de base de données, écrire du code côté serveur et assurer une intégration transparente entre les composants front-end et back-end.",
   },
   {
-    place: "Freelancer",
-    tenure: "Sep 2022 - Aug 2023",
-    role: "Wordpress Developer",
+    place: "Freelance",
+    tenure: "Sep 2022 - Août 2023",
+    role: "Développeur WordPress",
     detail:
-      "Develop and customize WordPress themes. Collaborate with clients to understand their requirements and implement solutions using WordPress best practices. Troubleshoot and debug WordPress issues, and ensure the security and performance of WordPress websites.",
+      "Développer et personnaliser des thèmes WordPress. Collaborer avec les clients pour comprendre leurs besoins et mettre en œuvre des solutions en utilisant les meilleures pratiques de WordPress. Dépanner et déboguer les problèmes de WordPress, et assurer la sécurité et les performances des sites WordPress.",
   },
   {
-    place: "Freelancer",
-    tenure: "Aug 2020 - Sep 2022",
-    role: "UI/UX Designer",
+    place: "Freelance",
+    tenure: "Août 2020 - Sep 2022",
+    role: "Designer UI/UX",
     detail:
-      "A visual designer design for a variety of platforms, which may include websites, games, movies, kiosks, and wearables. In short, they create the visual concepts and layouts for digital products.",
+      "Un designer visuel conçoit pour une variété de plateformes, ce qui peut inclure des sites web, des jeux, des films, des kiosques et des appareils portables. En bref, ils créent les concepts visuels et les mises en page pour les produits numériques.",
   },
   {
-    place: "Freelancer",
-    tenure: "Aug 2020 - Sep 2022",
-    role: "UI/UX Designer",
+    place: "Freelance",
+    tenure: "Août 2020 - Sep 2022",
+    role: "Designer UI/UX",
     detail:
-      "A visual designer design for a variety of platforms, which may include websites, games, movies, kiosks, and wearables. In short, they create the visual concepts and layouts for digital products.",
+      "Un designer visuel conçoit pour une variété de plateformes, ce qui peut inclure des sites web, des jeux, des films, des kiosques et des appareils portables. En bref, ils créent les concepts visuels et les mises en page pour les produits numériques.",
   }
 ];
 
 export const comments = [
   {
     name: "John Doe",
-    post: "Web Developer",
+    post: "Développeur Web",
     comment:
-      "Working with you was a great experience! Your expertise in web development helped me create a stunning website for my business. The design is modern and the functionality is flawless. Thank you for your professionalism and dedication!",
+      "Travailler avec vous a été une excellente expérience ! Votre expertise en développement web m'a aidé à créer un site web magnifique pour mon entreprise. Le design est moderne et la fonctionnalité est impeccable. Merci pour votre professionnalisme et votre dévouement !",
     img: "./people1.png",
   },
   {
     name: "Jane Smith",
-    post: "Graphic Designer",
+    post: "Designer Graphique",
     comment:
-      "I am extremely satisfied with the graphic design services you provided. The visuals you created perfectly represent my brand and have received positive feedback from my clients. Your attention to detail and creativity are commendable. Highly recommended!",
+      "Je suis extrêmement satisfait des services de conception graphique que vous avez fournis. Les visuels que vous avez créés représentent parfaitement ma marque et ont reçu des retours positifs de mes clients. Votre attention aux détails et votre créativité sont remarquables. Hautement recommandé !",
     img: "./people2.png",
   },
   {
     name: "Mike Johnson",
-    post: "Mobile App Developer",
+    post: "Développeur d'applications mobiles",
     comment:
-      "The mobile app you developed for my business exceeded my expectations. It is user-friendly, fast, and has all the features I requested. Your technical skills and problem-solving abilities are impressive. Thank you for delivering a high-quality product!",
+      "L'application mobile que vous avez développée pour mon entreprise a dépassé mes attentes. Elle est conviviale, rapide et possède toutes les fonctionnalités que j'avais demandées. Vos compétences techniques et vos capacités de résolution de problèmes sont impressionnantes. Merci d'avoir livré un produit de haute qualité !",
     img: "./people3.png",
   },
   {
     name: "Sarah Thompson",
-    post: "UI/UX Designer",
+    post: "Designer UI/UX",
     comment:
-      "I am thrilled with the UI/UX design work you did for my project. The interface is intuitive and visually appealing, enhancing the overall user experience. Your attention to detail and understanding of user behavior are remarkable. Great job!",
+      "Je suis ravi du travail de conception UI/UX que vous avez réalisé pour mon projet. L'interface est intuitive et visuellement attrayante, améliorant l'expérience utilisateur globale. Votre attention aux détails et votre compréhension du comportement des utilisateurs sont remarquables. Excellent travail !",
     img: "./people4.png",
   },
   {
     name: "David Wilson",
-    post: "Software Engineer",
+    post: "Ingénieur Logiciel",
     comment:
-      "Your software development services have been exceptional. The applications you built are robust, scalable, and performant. Your coding skills and ability to solve complex problems are truly impressive. Thank you for delivering top-notch solutions!",
+      "Vos services de développement logiciel ont été exceptionnels. Les applications que vous avez construites sont robustes, évolutives et performantes. Vos compétences en codage et votre capacité à résoudre des problèmes complexes sont vraiment impressionnantes. Merci de fournir des solutions de premier ordre !",
     img: "./people5.png",
   },
 ];

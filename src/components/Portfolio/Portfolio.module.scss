@@ -26,62 +26,79 @@
 
     .showCase {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
       justify-content: center;
-
-      .project {
-        position: relative;
-        border-radius: 20px;
-        overflow: hidden;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-
-        &:hover {
-          transform: scale(1.05);
-
-          .projectInfo {
-            opacity: 1;
-          }
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-
-        .projectInfo {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background: rgba(0, 0, 0, 0.7);
-          color: white;
-          padding: 1rem;
-          opacity: 0;
-          transition: opacity 0.3s ease;
-
-          h3 {
-            margin: 0;
-            font-size: 1.2rem;
-          }
-
-          a {
-            color: $secondary;
-            text-decoration: none;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-            display: inline-block;
-
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-        }
-      }
     }
   }
+}
+
+.projectCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .cardContent {
+    padding: 1.5rem;
+
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: $primary;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      color: $secondary;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+  }
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+
+  .techBadge {
+    background: rgba($primary, 0.1);
+    color: $primary;
+    padding: 0.25rem 0.75rem;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
+
+.projectMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: $secondary;
+  font-size: 0.9rem;
 }
 
 .modal {
@@ -95,35 +112,70 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  padding: 2rem;
 
   .modalContent {
     background: white;
     padding: 2rem;
     border-radius: 20px;
-    max-width: 80%;
-    max-height: 80%;
-    overflow: auto;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
     position: relative;
 
     img {
-      max-width: 100%;
-      max-height: 60vh;
-      object-fit: contain;
-      margin-bottom: 1rem;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 2rem;
     }
 
-    h2 {
-      margin-bottom: 1rem;
+    .projectDetails {
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: $primary;
+      }
+
+      section {
+        margin-bottom: 2rem;
+
+        h3 {
+          font-size: 1.2rem;
+          color: $secondary;
+          margin-bottom: 1rem;
+          font-weight: 600;
+        }
+
+        p {
+          line-height: 1.6;
+          color: $secondary;
+          margin-bottom: 0.5rem;
+        }
+
+        ul {
+          list-style-type: disc;
+          margin-left: 1.5rem;
+          margin-top: 0.5rem;
+
+          li {
+            margin-bottom: 0.5rem;
+            color: $secondary;
+          }
+        }
+      }
     }
 
     .viewButton {
       display: inline-block;
       background: $primary;
       color: white;
-      padding: 0.5rem 1rem;
+      padding: 0.75rem 1.5rem;
       border-radius: 5px;
       text-decoration: none;
-      margin-right: 1rem;
+      margin-top: 1rem;
+      transition: background 0.3s ease;
 
       &:hover {
         background: darken($primary, 10%);
@@ -136,12 +188,19 @@
       right: 1rem;
       background: none;
       border: none;
-      font-size: 1.5rem;
+      font-size: 2rem;
       cursor: pointer;
       color: $secondary;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
 
       &:hover {
-        color: $primary;
+        background-color: rgba(0, 0, 0, 0.1);
       }
     }
   }
@@ -159,12 +218,20 @@
   }
 
   .modal {
+    padding: 1rem;
+
     .modalContent {
       padding: 1rem;
       max-width: 95%;
 
       img {
-        max-height: 50vh;
+        height: 200px;
+      }
+
+      .projectDetails {
+        h2 {
+          font-size: 1.5rem;
+        }
       }
     }
   }

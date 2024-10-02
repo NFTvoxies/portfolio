@@ -16,14 +16,14 @@ const Hero = () => {
       >
         <div className={css.upperElements}>
           <motion.h1 className={css.name} variants={fadeIn("right", "tween", 0.2, 1)}>
-            Hey There,
+            Salut,
             <br />
-            I'm Youssef Lafkih.
+            Je suis Youssef Lafkih.
           </motion.h1>
           <motion.p className={css.tagline} variants={fadeIn("left", "tween", 0.4, 1)}>
-            I design and build beautiful simple
+            Je conçois et construis de belles choses simples,
             <br />
-            things, And I love what I do.
+            et j'aime ce que je fais.
           </motion.p>
         </div>
 
@@ -36,7 +36,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <FiMail /> Email Me
+              <FiMail /> Envoyez-moi un email
             </motion.a>
             <motion.a 
               className={`${css.button} ${css.cvButton}`} 
@@ -46,7 +46,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <FiDownload /> Download CV
+              <FiDownload /> Télécharger CV
             </motion.a>
           </div>
 
@@ -62,15 +62,15 @@ const Hero = () => {
           <motion.div variants={fadeIn("right", "tween", 0.3, 1)} className={css.experience}>
             <div className={css.experienceNumber}>2</div>
             <div className={css.experienceText}>
-              <div>Years</div>
-              <div>Experience</div>
+              <div>Années</div>
+              <div>d'Expérience</div>
             </div>
           </motion.div>
 
           <motion.div variants={fadeIn("left", "tween", 0.5, 1)} className={css.certificate}>
-            <img src="./certificate.png" alt="Certificate" />
-            <span>CERTIFIED PROFESSIONAL</span>
-            <span>FULL-STACK DEVELOPER</span>
+            <img src="./certificate.png" alt="Certificat" />
+            <span>PROFESSIONNEL CERTIFIÉ</span>
+            <span>DÉVELOPPEUR FULL-STACK</span>
           </motion.div>
         </div>
       </motion.div>

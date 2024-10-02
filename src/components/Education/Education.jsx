@@ -11,9 +11,9 @@ import css from "./Education.module.scss";
 const Education = () => {
   const educationData = [
     {
-      institution: "IFIAG/Sorbonne Paris North University, Casablanca",
+      institution: "IFIAG/Université Sorbonne Paris Nord, Casablanca",
       degree: "licence professionnelle Développement Web, Mobile & Digital",
-      tenure: "10/2023 - Present",
+      tenure: "10/2023 - Présent",
       color: "#286F6C",
     },
     {
@@ -52,7 +52,7 @@ const Education = () => {
       <a className="anchor" id="education"></a>
       <div className={`innerWidth flexCenter ${css.container}`}>
         <motion.span variants={textVariant2} className="primaryText yPaddings">
-          My Education
+          Mon Éducation
         </motion.span>
 
         <div className={css.experiences}>

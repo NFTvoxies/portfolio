@@ -18,13 +18,13 @@ const Contact = () => {
 
   const validateForm = () => {
     const newErrors = {};
-    if (!form.name) newErrors.name = "Name is required";
+    if (!form.name) newErrors.name = "Le nom est requis";
     if (!form.email) {
-      newErrors.email = "Email is required";
+      newErrors.email = "L'email est requis";
     } else if (!/\S+@\S+\.\S+/.test(form.email)) {
-      newErrors.email = "Email is invalid";
+      newErrors.email = "L'email est invalide";
     }
-    if (!form.message) newErrors.message = "Message is required";
+    if (!form.message) newErrors.message = "Le message est requis";
     return newErrors;
   };
 
@@ -34,19 +34,19 @@ const Contact = () => {
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
     } else {
-      // Sending email using EmailJS
+      // Envoi de l'email avec EmailJS
       emailjs
         .send("portfolio", "template_76ja14i", form, "youssef")
         .then((response) => {
-          console.log("SUCCESS!", response.status, response.text);
+          console.log("SUCCÈS!", response.status, response.text);
           setIsSubmitted(true);
           setForm({ name: "", email: "", message: "" });
           setErrors({});
-          toast.success("Thank you for contacting us!");
+          toast.success("Merci de nous avoir contactés!");
         })
         .catch((error) => {
-          console.log("FAILED...", error);
-          toast.error("Failed to send message. Please try again.");
+          console.log("ÉCHEC...", error);
+          toast.error("Échec de l'envoi du message. Veuillez réessayer.");
         });
     }
   };
@@ -66,9 +66,9 @@ const Contact = () => {
           variants={fadeIn("up", "tween", 0.3, 1)}
           className={css.heading}
         >
-          <h2 className="primaryText">Get in Touch</h2>
+          <h2 className="primaryText">Entrer en Contact</h2>
           <p className="secondaryText">
-            Feel free to reach out for collaborations or just a friendly chat.
+            N'hésitez pas à nous contacter pour des collaborations ou simplement pour discuter.
           </p>
         </motion.div>
 
@@ -78,14 +78,14 @@ const Contact = () => {
           onSubmit={handleSubmit}
         >
           <div className={css.inputGroup}>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Nom</label>
             <input
               type="text"
               id="name"
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="Your Name"
+              placeholder="Votre Nom"
               required
             />
             {errors.name && (
@@ -106,7 +106,7 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="Your Email"
+              placeholder="Votre Email"
               required
             />
             {errors.email && (
@@ -126,7 +126,7 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="Your Message"
+              placeholder="Votre Message"
               required
             />
             {errors.message && (
@@ -145,7 +145,7 @@ const Contact = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Send Message
+            Envoyer le Message
           </motion.button>
         </motion.form>
       </div>
