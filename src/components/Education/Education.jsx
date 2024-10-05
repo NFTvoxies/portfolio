@@ -52,7 +52,7 @@ const Education = () => {
       <a className="anchor" id="education"></a>
       <div className={`innerWidth flexCenter ${css.container}`}>
         <motion.span variants={textVariant2} className="primaryText yPaddings">
-          Mon Éducation
+          Formation
         </motion.span>
 
         <div className={css.experiences}>

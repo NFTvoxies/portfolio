@@ -151,7 +151,7 @@ const Portfolio = () => {
 
       <div className={`innerWidth ${css.container}`}>
         <motion.div variants={textVariant(0.4)} className={css.heading}>
-          <span className="primaryText">Mes Derniers Travaux</span>
+          <span className="primaryText">Realisation</span>
           <p>Solution parfaite pour une expérience numérique</p>
         </motion.div>
 
